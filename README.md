@@ -1,5 +1,4 @@
 # Automated-Testing
-<img src="" align="center"></img>
 
 <img src="https://th.bing.com/th/id/R.09a2a3147f51991ed9538cfab8f4c1d3?rik=7XXGa1R1NaShng&pid=ImgRaw&r=0" align="center"></img>
 # Automated testing 
