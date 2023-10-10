@@ -9,6 +9,7 @@ This is a software testing Programme Created By hyperayoub
 
 
 
+
 ## what is automated testing
 
 Automated testing is a software testing technique in which computer programs and tools are used to automate the execution of test cases and the comparison of actual outcomes with expected outcomes. This approach to testing is an essential part of the software development process and quality assurance.s.
@@ -46,6 +47,23 @@ Download python:
   cd my-project
 ```
 
+![f47a940140d3cf08aa01c58d6521a7b3-27](https://github.com/hyper-ayoub/Automated-Testing/assets/133155846/1768f829-a908-460d-86fe-b5ad9be3e1d0)
+
+![f47a940140d3cf08aa01c58d6521a7b3-29](https://github.com/hyper-ayoub/Automated-Testing/assets/133155846/a7334be3-c02e-460d-9bb9-006540d7f7ec)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -80,6 +98,9 @@ first
  - [robotfcode](https://marketplace.visualstudio.com/items?itemName=d-biehl.robotcode)
  - [robot framework language server](https://marketplace.visualstudio.com/items?itemName=robocorp.robotframework-lsp)
 
+## File structure
+
+![f47a940140d3cf08aa01c58d6521a7b3-34](https://github.com/hyper-ayoub/Automated-Testing/assets/133155846/94d6774d-ff48-4fd9-b2de-27ba4834cdf3)
 
 
 
