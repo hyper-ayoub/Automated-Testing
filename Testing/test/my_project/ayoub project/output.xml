@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.1.1 (Python 3.12.0 on win32)" generated="20231014 12:18:43.668" rpa="false" schemaversion="4">
+<suite id="s1" name="Test" source="C:\Users\hp\Desktop\Software testing\test\my_project\ayoub project\test.robot">
+<test id="s1-t1" name="login test" line="105">
+<kw name="LunchBrowser">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${url}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20231014 12:18:43.873" level="INFO">Opening browser 'Edge' to base url 'https://atlasgaming.ma/'.</msg>
+<status status="PASS" starttime="20231014 12:18:43.873" endtime="20231014 12:18:48.459"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20231014 12:18:48.459" endtime="20231014 12:18:48.667"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>4s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20231014 12:18:52.669" level="INFO">Slept 4 seconds</msg>
+<status status="PASS" starttime="20231014 12:18:48.667" endtime="20231014 12:18:52.669"/>
+</kw>
+<status status="PASS" starttime="20231014 12:18:43.873" endtime="20231014 12:18:52.669"/>
+</kw>
+<kw name=" search">
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>//*[@id="dgwt-wcas-search-input-1"]</arg>
+<arg>Logitech G Pro avec capteur HERO 25K</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20231014 12:18:52.670" level="INFO">Typing text 'Logitech G Pro avec capteur HERO 25K' into text field '//*[@id="dgwt-wcas-search-input-1"]'.</msg>
+<msg timestamp="20231014 12:18:52.674" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: MicrosoftEdge=117.0.2045.60)
+Stacktrace:
+	GetHandleVerifier [0x00007FF7C41C99F2+63682]
+	Microsoft::Applications::Events::ILogConfiguration::operator* [0x00007FF7C4151942+267762]
+	(No symbol) [0x00007FF7C3F0AC0E]
+	(No symbol) [0x00007FF7C3EE28C7]
+	(No symbol) [0x00007FF7C3F80B9F]
+	(No symbol) [0x00007FF7C3F963E8]
+	(No symbol) [0x00007FF7C3F7C623]
+	(No symbol) [0x00007FF7C3F4DA7A]
+	(No symbol) [0x00007FF7C3F4CD6B]
+	(No symbol) [0x00007FF7C3F4E204]
+	Microsoft::Applications::Events::EventProperty::to_string [0x00007FF7C4395EF9+1233737]
+	(No symbol) [0x00007FF7C3FCB274]
+	Microsoft::Applications::Events::EventProperty::~EventProperty [0x00007FF7C40932AA+33498]
+	Microsoft::Applications::Events::EventProperty::~EventProperty [0x00007FF7C408BDE9+3609]
+	Microsoft::Applications::Events::EventProperty::to_string [0x00007FF7C4394C94+1229028]
+	Microsoft::Applications::Events::ILogConfiguration::operator* [0x00007FF7C415BAE8+309144]
+	Microsoft::Applications::Events::ILogConfiguration::operator* [0x00007FF7C41567C4+287860]
+	Microsoft::Applications::Events::ILogConfiguration::operator* [0x00007FF7C41568F2+288162]
+	Microsoft::Applications::Events::ILogConfiguration::operator* [0x00007FF7C4149FF1+236705]
+	BaseThreadInitThunk [0x00007FF8E3347344+20]
+	RtlUserThreadStart [0x00007FF8E48426B1+33]
+</msg>
+<msg timestamp="20231014 12:18:52.678" level="FAIL">NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: MicrosoftEdge=117.0.2045.60)
+Stacktrace:
+	GetHandleVerifier [0x00007FF7C41C99F2+63682]
+	Microsoft::Applications::Events::ILogConfiguration::operator* [0x00007FF7C4151942+267762]
+	(No symbol) [0x00007FF7C3F0AC0E]
+	(No symbol) [0x00007FF7C3EE28C7]
+	(No symbol) [0x00007FF7C3F80B9F]
+	(No symbol) [0x00007FF7C3F963E8]
+	(No symbol) [0x00007FF7C3F7C623]
+	(No symbol) [0x00007FF7C3F4DA7A]
+	(No symbol) [0x00007FF7C3F4CD6B]
+	(No symbol) [0x00007FF7C3F4E204]
+	Microsoft::Applications::Events::EventProperty::to_string [0x00007FF7C4395EF9+1233737]
+	(No symbol) [0x00007FF7C3FCB274]
+	Microsoft::Applications::Events::EventProperty::~EventProperty [0x00007FF7C40932AA+33498]
+	Microsoft::Applications::Events::EventProperty::~EventProperty [0x00007FF7C408BDE9+3609]
+	Microsoft::Applications::Events::EventProperty::to_string [0x00007FF7C4394C94+1229028]
+	Microsoft::Applications::Events::ILogConfiguration::operator* [0x00007FF7C415BAE8+309144]
+	Microsoft::Applications::Events::ILogConfiguration::operator* [0x00007FF7C41567C4+287860]
+	Microsoft::Applications::Events::ILogConfiguration::operator* [0x00007FF7C41568F2+288162]
+	Microsoft::Applications::Events::ILogConfiguration::operator* [0x00007FF7C4149FF1+236705]
+	BaseThreadInitThunk [0x00007FF8E3347344+20]
+	RtlUserThreadStart [0x00007FF8E48426B1+33]
+</msg>
+<status status="FAIL" starttime="20231014 12:18:52.669" endtime="20231014 12:18:52.682"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20231014 12:18:52.682" endtime="20231014 12:18:52.682"/>
+</kw>
+<kw name="Press Keys" library="SeleniumLibrary">
+<arg>//*[@id="dgwt-wcas-search-input-1"]</arg>
+<arg>ENTER</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<status status="NOT RUN" starttime="20231014 12:18:52.682" endtime="20231014 12:18:52.682"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20231014 12:18:52.682" endtime="20231014 12:18:52.682"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>//*[@id="div_block-185-5336-1"]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20231014 12:18:52.682" endtime="20231014 12:18:52.682"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20231014 12:18:52.682" endtime="20231014 12:18:52.682"/>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>//*[@id="-product-cart-button-30-5404"]/form/button</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20231014 12:18:52.682" endtime="20231014 12:18:52.682"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20231014 12:18:52.683" endtime="20231014 12:18:52.683"/>
+</kw>
+<status status="FAIL" starttime="20231014 12:18:52.669" endtime="20231014 12:18:52.683"/>
+</kw>
+<kw name="add product">
+<status status="NOT RUN" starttime="20231014 12:18:52.683" endtime="20231014 12:18:52.683"/>
+</kw>
+<kw name="coupon code">
+<status status="NOT RUN" starttime="20231014 12:18:52.684" endtime="20231014 12:18:52.684"/>
+</kw>
+<status status="FAIL" starttime="20231014 12:18:43.872" endtime="20231014 12:18:52.685">NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: MicrosoftEdge=117.0.2045.60)
+Stacktrace:
+	GetHandleVerifier [0x00007FF7C41C99F2+63682]
+	Microsoft::Applications::Events::ILogConfiguration::operator* [0x00007FF7C4151942+267762]
+	(No symbol) [0x00007FF7C3F0AC0E]
+	(No symbol) [0x00007FF7C3EE28C7]
+	(No symbol) [0x00007FF7C3F80B9F]
+	(No symbol) [0x00007FF7C3F963E8]
+	(No symbol) [0x00007FF7C3F7C623]
+	(No symbol) [0x00007FF7C3F4DA7A]
+	(No symbol) [0x00007FF7C3F4CD6B]
+	(No symbol) [0x00007FF7C3F4E204]
+	Microsoft::Applications::Events::EventProperty::to_string [0x00007FF7C4395EF9+1233737]
+	(No symbol) [0x00007FF7C3FCB274]
+	Microsoft::Applications::Events::EventProperty::~EventProperty [0x00007FF7C40932AA+33498]
+	Microsoft::Applications::Events::EventProperty::~EventProperty [0x00007FF7C408BDE9+3609]
+	Microsoft::Applications::Events::EventProperty::to_string [0x00007FF7C4394C94+1229028]
+	Microsoft::Applications::Events::ILogConfiguration::operator* [0x00007FF7C415BAE8+309144]
+	Microsoft::Applications::Events::ILogConfiguration::operator* [0x00007FF7C41567C4+287860]
+	Microsoft::Applications::Events::ILogConfiguration::operator* [0x00007FF7C41568F2+288162]
+	Microsoft::Applications::Events::ILogConfiguration::operator* [0x00007FF7C4149FF1+236705]
+	BaseThreadInitThunk [0x00007FF8E3347344+20]
+	RtlUserThreadStart [0x00007FF8E48426B1+33]
+</status>
+</test>
+<status status="FAIL" starttime="20231014 12:18:43.670" endtime="20231014 12:18:52.690"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="1" skip="0" id="s1" name="Test">Test</stat>
+</suite>
+</statistics>
+<errors>
+<msg timestamp="20231014 12:18:52.674" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: MicrosoftEdge=117.0.2045.60)
+Stacktrace:
+	GetHandleVerifier [0x00007FF7C41C99F2+63682]
+	Microsoft::Applications::Events::ILogConfiguration::operator* [0x00007FF7C4151942+267762]
+	(No symbol) [0x00007FF7C3F0AC0E]
+	(No symbol) [0x00007FF7C3EE28C7]
+	(No symbol) [0x00007FF7C3F80B9F]
+	(No symbol) [0x00007FF7C3F963E8]
+	(No symbol) [0x00007FF7C3F7C623]
+	(No symbol) [0x00007FF7C3F4DA7A]
+	(No symbol) [0x00007FF7C3F4CD6B]
+	(No symbol) [0x00007FF7C3F4E204]
+	Microsoft::Applications::Events::EventProperty::to_string [0x00007FF7C4395EF9+1233737]
+	(No symbol) [0x00007FF7C3FCB274]
+	Microsoft::Applications::Events::EventProperty::~EventProperty [0x00007FF7C40932AA+33498]
+	Microsoft::Applications::Events::EventProperty::~EventProperty [0x00007FF7C408BDE9+3609]
+	Microsoft::Applications::Events::EventProperty::to_string [0x00007FF7C4394C94+1229028]
+	Microsoft::Applications::Events::ILogConfiguration::operator* [0x00007FF7C415BAE8+309144]
+	Microsoft::Applications::Events::ILogConfiguration::operator* [0x00007FF7C41567C4+287860]
+	Microsoft::Applications::Events::ILogConfiguration::operator* [0x00007FF7C41568F2+288162]
+	Microsoft::Applications::Events::ILogConfiguration::operator* [0x00007FF7C4149FF1+236705]
+	BaseThreadInitThunk [0x00007FF8E3347344+20]
+	RtlUserThreadStart [0x00007FF8E48426B1+33]
+</msg>
+</errors>
+</robot>

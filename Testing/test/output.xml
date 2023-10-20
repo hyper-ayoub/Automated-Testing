@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.1.1 (Python 3.12.0 on win32)" generated="20231014 12:14:38.859" rpa="false" schemaversion="4">
+<suite id="s1" name="Test2" source="C:\Users\hp\Desktop\Software testing\test\test2.robot">
+<test id="s1-t1" name="First Test" line="54">
+<kw name="LunchBrowser">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${url}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20231014 12:14:39.059" level="INFO">Opening browser 'chrome' to base url 'https://www.jumia.ma/'.</msg>
+<msg timestamp="20231014 12:14:39.633" level="WARN">The chromedriver version (114.0.5735.90) detected in PATH at C:\webdriver\chromedriver.exe might not be compatible with the detected chrome version (118.0.5993.70); currently, chromedriver 118.0.5993.70 is recommended for chrome 118.*, so it is advised to delete the driver in PATH and retry</msg>
+<msg timestamp="20231014 12:14:42.850" level="INFO">Cannot capture screenshot because no browser is open.</msg>
+<msg timestamp="20231014 12:14:42.850" level="FAIL">SessionNotCreatedException: Message: session not created: This version of ChromeDriver only supports Chrome version 114
+Current browser version is 118.0.5993.70 with binary path C:\Users\hp\.cache\selenium\chrome\win64\118.0.5993.70\chrome.exe
+Stacktrace:
+Backtrace:
+	GetHandleVerifier [0x011FA813+48355]
+	(No symbol) [0x0118C4B1]
+	(No symbol) [0x01095358]
+	(No symbol) [0x010B61AC]
+	(No symbol) [0x010B1EF3]
+	(No symbol) [0x010B0579]
+	(No symbol) [0x010E0C55]
+	(No symbol) [0x010E093C]
+	(No symbol) [0x010DA536]
+	(No symbol) [0x010B82DC]
+	(No symbol) [0x010B93DD]
+	GetHandleVerifier [0x0145AABD+2539405]
+	GetHandleVerifier [0x0149A78F+2800735]
+	GetHandleVerifier [0x0149456C+2775612]
+	GetHandleVerifier [0x012851E0+616112]
+	(No symbol) [0x01195F8C]
+	(No symbol) [0x01192328]
+	(No symbol) [0x0119240B]
+	(No symbol) [0x01184FF7]
+	BaseThreadInitThunk [0x759DFCC9+25]
+	RtlGetAppContainerNamedObjectPath [0x778A7B1E+286]
+	RtlGetAppContainerNamedObjectPath [0x778A7AEE+238]
+</msg>
+<status status="FAIL" starttime="20231014 12:14:39.059" endtime="20231014 12:14:42.854"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20231014 12:14:42.854" endtime="20231014 12:14:42.854"/>
+</kw>
+<status status="FAIL" starttime="20231014 12:14:39.058" endtime="20231014 12:14:42.854"/>
+</kw>
+<kw name="Search">
+<status status="NOT RUN" starttime="20231014 12:14:42.855" endtime="20231014 12:14:42.855"/>
+</kw>
+<kw name="CreateAccount">
+<status status="NOT RUN" starttime="20231014 12:14:42.855" endtime="20231014 12:14:42.855"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="NOT RUN" starttime="20231014 12:14:42.855" endtime="20231014 12:14:42.855"/>
+</kw>
+<status status="FAIL" starttime="20231014 12:14:39.058" endtime="20231014 12:14:42.856">SessionNotCreatedException: Message: session not created: This version of ChromeDriver only supports Chrome version 114
+Current browser version is 118.0.5993.70 with binary path C:\Users\hp\.cache\selenium\chrome\win64\118.0.5993.70\chrome.exe
+Stacktrace:
+Backtrace:
+	GetHandleVerifier [0x011FA813+48355]
+	(No symbol) [0x0118C4B1]
+	(No symbol) [0x01095358]
+	(No symbol) [0x010B61AC]
+	(No symbol) [0x010B1EF3]
+	(No symbol) [0x010B0579]
+	(No symbol) [0x010E0C55]
+	(No symbol) [0x010E093C]
+	(No symbol) [0x010DA536]
+	(No symbol) [0x010B82DC]
+	(No symbol) [0x010B93DD]
+	GetHandleVerifier [0x0145AABD+2539405]
+	GetHandleVerifier [0x0149A78F+2800735]
+	GetHandleVerifier [0x0149456C+2775612]
+	GetHandleVerifier [0x012851E0+616112]
+	(No symbol) [0x01195F8C]
+	(No symbol) [0x01192328]
+	(No symbol) [0x0119240B]
+	(No symbol) [0x01184FF7]
+	BaseThreadInitThunk [0x759DFCC9+25]
+	RtlGetAppContainerNamedObjectPath [0x778A7B1E+286]
+	RtlGetAppContainerNamedObjectPath [0x778A7AEE+238]
+</status>
+</test>
+<status status="FAIL" starttime="20231014 12:14:38.860" endtime="20231014 12:14:42.860"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="1" skip="0" id="s1" name="Test2">Test2</stat>
+</suite>
+</statistics>
+<errors>
+<msg timestamp="20231014 12:14:39.633" level="WARN">The chromedriver version (114.0.5735.90) detected in PATH at C:\webdriver\chromedriver.exe might not be compatible with the detected chrome version (118.0.5993.70); currently, chromedriver 118.0.5993.70 is recommended for chrome 118.*, so it is advised to delete the driver in PATH and retry</msg>
+</errors>
+</robot>

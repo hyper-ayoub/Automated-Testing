@@ -1,0 +1,34 @@
+*** Test Cases ***
+Test API Request
+    Create Session    movies   ${BASE_URL}
+    &{headers}    Create Dictionary    X-RapidAPI-Key   6fc4363381mshccc938c5300e831p1a2d4cjsnc09dc6d2a411    X-RapidAPI-Host    moviesdatabase.p.rapidapi.com
+    ${response}    GET On Session    movies    /    headers=${headers}    verify=${True}
+    Should Be Equal    ${response.status_code}    200
+    Log    Response: ${response.text}
+    ${movies}    Set Variable    ${response.json()["results"]}
+
+    #Test cases for the movie list    
+    Insert Data into DB    ${movies}
+
+
+*** Keywords **
+Create Table
+    Connect To Database    pymysql    ${DB_NAME}    ${DB_USER}    ${DB_PASS}    ${DB_HOST}    ${DB_PORT}
+    ${create_table_status}    Run Keyword And Return Status    Query    CREATE TABLE ${TABLE_NAME} (titre varchar(50) , genre varchar(50))
+    Should Be True    ${create_table_status}    # Check if table creation is successful
+    Disconnect From Database
+Insert Data into DB
+    [Arguments]    ${movies}    
+    Connect To Database    pymysql    ${DB_NAME}    ${DB_USER}    ${DB_PASS}    ${DB_HOST}    ${DB_PORT}
+    FOR    ${movie}    IN    @{movies}
+        ${annee}    Set Variable  ${movie["releaseYear"]["year"]}  
+        ${titre}    Set Variable  ${movie["titleText"]["text"]}
+        Log To Console    ${titre} \n
+        ${sql}    Set Variable  INSERT INTO ${TABLE_NAME} (titre , genre) VALUES ('${titre}','${annee}')
+            Log To Console    ${sql}
+
+        ${insert_status}    Run Keyword And Return Status    Query    ${sql}
+        Should Be True    ${insert_status}    # Check if the insertion was successful
+    END
+
+    Disconnect From Database

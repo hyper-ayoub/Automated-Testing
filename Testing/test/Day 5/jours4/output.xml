@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.1.1 (Python 3.12.0 on win32)" generated="20231014 17:50:20.606" rpa="false" schemaversion="4">
+<suite id="s1" name="Test1" source="C:\Users\hp\Desktop\Software testing\test\Day 5\jours4\test1.robot">
+<kw name="Open Browser" library="SeleniumLibrary" type="SETUP">
+<arg>${url}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20231014 17:50:20.801" level="INFO">Opening browser 'chrome' to base url 'https://www.jumia.ma/'.</msg>
+<status status="PASS" starttime="20231014 17:50:20.800" endtime="20231014 17:50:24.446"/>
+</kw>
+<test id="s1-t1" name="First Test" line="54">
+<kw name="Double Click Element" library="SeleniumLibrary" type="SETUP">
+<arg>//*[@id="jm"]/header</arg>
+<doc>Double clicks the element identified by ``locator``.</doc>
+<msg timestamp="20231014 17:50:24.449" level="INFO">Double clicking element '//*[@id="jm"]/header'.</msg>
+<status status="PASS" starttime="20231014 17:50:24.448" endtime="20231014 17:50:24.749"/>
+</kw>
+<kw name="Search">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>//*[@id="jm"]/header/section/div[2]/div[1]/label</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20231014 17:50:24.751" level="INFO">Clicking element '//*[@id="jm"]/header/section/div[2]/div[1]/label'.</msg>
+<status status="PASS" starttime="20231014 17:50:24.750" endtime="20231014 17:50:24.823"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20231014 17:50:26.825" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20231014 17:50:24.824" endtime="20231014 17:50:26.825"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>//*[@id="dpdw-login-box"]/div/div/a</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20231014 17:50:26.825" level="INFO">Clicking element '//*[@id="dpdw-login-box"]/div/div/a'.</msg>
+<status status="PASS" starttime="20231014 17:50:26.825" endtime="20231014 17:50:28.969"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20231014 17:50:30.969" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20231014 17:50:28.969" endtime="20231014 17:50:30.969"/>
+</kw>
+<status status="PASS" starttime="20231014 17:50:24.750" endtime="20231014 17:50:30.969"/>
+</kw>
+<kw name="Login">
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>//*[@id="input_identifierValue"]</arg>
+<arg>${email}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20231014 17:50:30.971" level="INFO">Typing text 'fcaaisular784998@marketstore.pw' into text field '//*[@id="input_identifierValue"]'.</msg>
+<status status="PASS" starttime="20231014 17:50:30.970" endtime="20231014 17:50:31.216"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20231014 17:50:33.217" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20231014 17:50:31.216" endtime="20231014 17:50:33.217"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>//button[starts-with(@class,'mdc-button')]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20231014 17:50:33.217" level="INFO">Clicking element '//button[starts-with(@class,'mdc-button')]'.</msg>
+<status status="PASS" starttime="20231014 17:50:33.217" endtime="20231014 17:50:34.275"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20231014 17:50:36.276" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20231014 17:50:34.275" endtime="20231014 17:50:36.276"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>//input[starts-with(@class,'mdc-text')]</arg>
+<arg>${password}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20231014 17:50:36.276" level="INFO">Typing text 'Test123@' into text field '//input[starts-with(@class,'mdc-text')]'.</msg>
+<status status="PASS" starttime="20231014 17:50:36.276" endtime="20231014 17:50:36.345"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>//button[starts-with(@class,'mdc-button')]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20231014 17:50:36.346" level="INFO">Clicking element '//button[starts-with(@class,'mdc-button')]'.</msg>
+<status status="PASS" starttime="20231014 17:50:36.345" endtime="20231014 17:50:38.209"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>0.5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20231014 17:50:38.711" level="INFO">Slept 500 milliseconds</msg>
+<status status="PASS" starttime="20231014 17:50:38.210" endtime="20231014 17:50:38.711"/>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20231014 17:50:40.582" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-20.png"&gt;&lt;img src="selenium-screenshot-20.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20231014 17:50:38.711" endtime="20231014 17:50:40.582"/>
+</kw>
+<status status="PASS" starttime="20231014 17:50:30.970" endtime="20231014 17:50:40.582"/>
+</kw>
+<kw name="Login with Invalid Credentials">
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>//*[@id="input_identifierValue"]</arg>
+<arg>${email}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20231014 17:50:40.584" level="INFO">Typing text 'fcaaisular784998@marketstore.pw' into text field '//*[@id="input_identifierValue"]'.</msg>
+<msg timestamp="20231014 17:50:40.717" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-21.png"&gt;&lt;img src="selenium-screenshot-21.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg timestamp="20231014 17:50:40.717" level="FAIL">Element with locator '//*[@id="input_identifierValue"]' not found.</msg>
+<status status="FAIL" starttime="20231014 17:50:40.583" endtime="20231014 17:50:40.720"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20231014 17:50:40.720" endtime="20231014 17:50:40.720"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>//button[starts-with(@class,'mdc-button')]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20231014 17:50:40.720" endtime="20231014 17:50:40.720"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20231014 17:50:40.720" endtime="20231014 17:50:40.720"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>//input[starts-with(@class,'mdc-text')]</arg>
+<arg>mnnmnmn</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20231014 17:50:40.720" endtime="20231014 17:50:40.720"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>//button[starts-with(@class,'mdc-button')]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20231014 17:50:40.720" endtime="20231014 17:50:40.721"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>0.5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20231014 17:50:40.721" endtime="20231014 17:50:40.721"/>
+</kw>
+<kw name="Wait Until Page Contains" library="SeleniumLibrary">
+<arg>Mot de passe incorrect. Réessayez ou cliquez sur "Mot de passe oublié?" pour le réinitialiser.</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="NOT RUN" starttime="20231014 17:50:40.721" endtime="20231014 17:50:40.721"/>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="NOT RUN" starttime="20231014 17:50:40.721" endtime="20231014 17:50:40.721"/>
+</kw>
+<status status="FAIL" starttime="20231014 17:50:40.583" endtime="20231014 17:50:40.721"/>
+</kw>
+<kw name="Test Teardown">
+<status status="NOT RUN" starttime="20231014 17:50:40.721" endtime="20231014 17:50:40.722"/>
+</kw>
+<tag>Login</tag>
+<status status="FAIL" starttime="20231014 17:50:24.447" endtime="20231014 17:50:40.722">Element with locator '//*[@id="input_identifierValue"]' not found.</status>
+</test>
+<kw name="Close Browser" library="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20231014 17:50:40.724" endtime="20231014 17:50:42.869"/>
+</kw>
+<doc>This file contains test cases for the login functionality.</doc>
+<status status="FAIL" starttime="20231014 17:50:20.608" endtime="20231014 17:50:42.869"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="0" fail="1" skip="0">Login</stat>
+</tag>
+<suite>
+<stat pass="0" fail="1" skip="0" id="s1" name="Test1">Test1</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

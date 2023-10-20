@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.1.1 (Python 3.12.0 on win32)" generated="20231014 17:33:38.536" rpa="false" schemaversion="4">
+<suite id="s1" name="Eatsy" source="C:\Users\hp\Desktop\Software testing\test\Day 5\jours2\eatsy.robot">
+<test id="s1-t1" name="Login with correct Username and Password" line="5">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>url=https://www.etsy.com/login</arg>
+<arg>browser=Edge</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20231014 17:33:38.735" level="INFO">Opening browser 'Edge' to base url 'https://www.etsy.com/login'.</msg>
+<status status="PASS" starttime="20231014 17:33:38.735" endtime="20231014 17:33:45.467"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>id:join_neu_email_field</arg>
+<arg>ibtihalabouh@gmail.com</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20231014 17:33:45.469" level="INFO">Typing text 'ibtihalabouh@gmail.com' into text field 'id:join_neu_email_field'.</msg>
+<status status="PASS" starttime="20231014 17:33:45.468" endtime="20231014 17:33:45.602"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>password</arg>
+<arg>kitty123</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20231014 17:33:45.603" level="INFO">Typing text 'kitty123' into text field 'password'.</msg>
+<status status="PASS" starttime="20231014 17:33:45.603" endtime="20231014 17:33:45.719"/>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>name:submit_attempt</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20231014 17:33:45.720" level="INFO">Clicking button 'name:submit_attempt'.</msg>
+<status status="PASS" starttime="20231014 17:33:45.719" endtime="20231014 17:33:45.814"/>
+</kw>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>class:wt-circle</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" starttime="20231014 17:33:45.814" endtime="20231014 17:33:52.919"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20231014 17:33:52.919" endtime="20231014 17:33:55.119"/>
+</kw>
+<status status="PASS" starttime="20231014 17:33:38.734" endtime="20231014 17:33:55.120"/>
+</test>
+<status status="PASS" starttime="20231014 17:33:38.537" endtime="20231014 17:33:55.122"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Eatsy">Eatsy</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

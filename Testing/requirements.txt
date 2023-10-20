@@ -1,0 +1,9 @@
+robotframework
+robotframework-seleniumlibrary
+webdrivermanager
+selector hub extension + testing daily
+
+
+
+
+

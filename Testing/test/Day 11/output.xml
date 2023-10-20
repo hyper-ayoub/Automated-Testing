@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.1.1 (Python 3.12.0 on win32)" generated="20231014 17:53:25.843" rpa="false" schemaversion="4">
+<suite id="s1" name="Store" source="C:\Users\hp\Desktop\Software testing\test\Day 11\store.robot">
+<test id="s1-t1" name="Test API Request" line="17">
+<kw name="Create Session">
+<arg>movies</arg>
+<arg>${BASE_URL}</arg>
+<msg timestamp="20231014 17:53:25.895" level="FAIL">No keyword with name 'Create Session' found.</msg>
+<status status="FAIL" starttime="20231014 17:53:25.894" endtime="20231014 17:53:25.895"/>
+</kw>
+<kw name="Create Dictionary" library="BuiltIn">
+<var>&amp;{headers}</var>
+<arg>X-RapidAPI-Key</arg>
+<arg>6fc4363381mshccc938c5300e831p1a2d4cjsnc09dc6d2a411</arg>
+<arg>X-RapidAPI-Host</arg>
+<arg>moviesdatabase.p.rapidapi.com</arg>
+<doc>Creates and returns a dictionary based on the given ``items``.</doc>
+<status status="NOT RUN" starttime="20231014 17:53:25.895" endtime="20231014 17:53:25.895"/>
+</kw>
+<kw name="GET On Session">
+<var>${response}</var>
+<arg>movies</arg>
+<arg>/</arg>
+<arg>headers=${headers}</arg>
+<arg>verify=${True}</arg>
+<status status="NOT RUN" starttime="20231014 17:53:25.898" endtime="20231014 17:53:25.898"/>
+</kw>
+<kw name="Should Be Equal">
+<arg>${response.status_code}</arg>
+<arg>200</arg>
+<status status="NOT RUN" starttime="20231014 17:53:25.898" endtime="20231014 17:53:25.898"/>
+</kw>
+<kw name="Log" library="BuiltIn">
+<arg>Response: ${response.text}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="NOT RUN" starttime="20231014 17:53:25.898" endtime="20231014 17:53:25.899"/>
+</kw>
+<kw name="Set Variable" library="BuiltIn">
+<var>${movies}</var>
+<arg>${response.json()["results"]}</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="NOT RUN" starttime="20231014 17:53:25.899" endtime="20231014 17:53:25.899"/>
+</kw>
+<kw name="Test Movie List Contains Movies">
+<arg>${movies}</arg>
+<status status="NOT RUN" starttime="20231014 17:53:25.899" endtime="20231014 17:53:25.899"/>
+</kw>
+<kw name="Test Movie List Attributes">
+<arg>${movies}</arg>
+<status status="NOT RUN" starttime="20231014 17:53:25.899" endtime="20231014 17:53:25.899"/>
+</kw>
+<kw name="Save Movies To CSV">
+<arg>${movies}</arg>
+<status status="NOT RUN" starttime="20231014 17:53:25.899" endtime="20231014 17:53:25.900"/>
+</kw>
+<kw name="Save Movies To JSON">
+<arg>${movies}</arg>
+<status status="NOT RUN" starttime="20231014 17:53:25.900" endtime="20231014 17:53:25.900"/>
+</kw>
+<kw name="Save Movies To TXT">
+<arg>${movies}</arg>
+<status status="NOT RUN" starttime="20231014 17:53:25.900" endtime="20231014 17:53:25.900"/>
+</kw>
+<status status="FAIL" starttime="20231014 17:53:25.892" endtime="20231014 17:53:25.901">No keyword with name 'Create Session' found.</status>
+</test>
+<status status="FAIL" starttime="20231014 17:53:25.843" endtime="20231014 17:53:25.902"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="1" skip="0" id="s1" name="Store">Store</stat>
+</suite>
+</statistics>
+<errors>
+<msg timestamp="20231014 17:53:25.870" level="ERROR">Error in file 'C:\Users\hp\Desktop\Software testing\test\Day 11\store.robot' on line 3: Importing library 'RequestsLibrary' failed: ModuleNotFoundError: No module named 'RequestsLibrary'
+Traceback (most recent call last):
+  None
+PYTHONPATH:
+  C:\python32\Scripts\robot.exe
+  C:\python32\python312.zip
+  C:\python32\DLLs
+  C:\python32\Lib
+  C:\python32
+  C:\python32\Lib\site-packages</msg>
+<msg timestamp="20231014 17:53:25.887" level="ERROR">Error in file 'C:\Users\hp\Desktop\Software testing\test\Day 11\store.robot' on line 7: Importing library 'JSONLibrary' failed: ModuleNotFoundError: No module named 'JSONLibrary'
+Traceback (most recent call last):
+  None
+PYTHONPATH:
+  C:\python32\Scripts\robot.exe
+  C:\python32\python312.zip
+  C:\python32\DLLs
+  C:\python32\Lib
+  C:\python32
+  C:\python32\Lib\site-packages</msg>
+</errors>
+</robot>
